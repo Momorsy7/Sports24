@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportHub | الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="news.html">الأخبار</a></li>
+                <li><a href="teams.html">الفرق</a></li>
+                <li><a href="live-scores.html">النتائج المباشرة</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="latest-news">
+            <h2>آخر الأخبار</h2>
+            <article>
+                <h3>عنوان الخبر</h3>
+                <p>تفاصيل مختصرة عن الخبر...</p>
+            </article>
+        </section>
+        <section id="live-scores">
+            <h2>النتائج المباشرة</h2>
+            <p>متابعة نتائج المباريات لحظة بلحظة.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 SportHub - جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportHub | الأخبار</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="news.html">الأخبار</a></li>
+                <li><a href="teams.html">الفرق</a></li>
+                <li><a href="live-scores.html">النتائج المباشرة</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>الأخبار الرياضية</h1>
+        <section class="news-section">
+            <article>
+                <h2>أحدث الأخبار</h2>
+                <p>تفاصيل الخبر الأول...</p>
+            </article>
+            <article>
+                <h2>تحليل رياضي</h2>
+                <p>مقالة تحليلية عن آخر المباريات...</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 SportHub - جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportHub | النتائج المباشرة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="news.html">الأخبار</a></li>
+                <li><a href="teams.html">الفرق</a></li>
+                <li><a href="live-scores.html">النتائج المباشرة</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>النتائج المباشرة</h1>
+        <section id="scores">
+            <p>جاري تحميل النتائج...</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 SportHub - جميع الحقوق محفوظة</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>// scripts.js
+document.addEventListener("DOMContentLoaded", () => {
+    const scoresSection = document.getElementById("scores");
+
+    // محاكاة بيانات النتائج المباشرة
+    const liveScores = [
+        { match: "فريق A ضد فريق B", score: "2-1" },
+        { match: "فريق C ضد فريق D", score: "1-1" },
+    ];
+
+    // عرض النتائج في الصفحة
+    scoresSection.innerHTML = liveScores
+        .map(score => `<p>${score.match}: <strong>${score.score}</strong></p>`)
+        .join("");
+});/* تحسين التصميم */
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+.news-section, #scores {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.news-section article {
+    margin-bottom: 20px;
+}
+
+.news-section article h2 {
+    color: #555;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportHub | الفرق</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="news.html">الأخبار</a></li>
+                <li><a href="teams.html">الفرق</a></li>
+                <li><a href="live-scores.html">النتائج المباشرة</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>الفرق الرياضية</h1>
+        <section class="teams">
+            <article>
+                <img src="team1.jpg" alt="فريق 1">
+                <h2>فريق A</h2>
+                <p>معلومات عن الفريق...</p>
+            </article>
+            <article>
+                <img src="team2.jpg" alt="فريق 2">
+                <h2>فريق B</h2>
+                <p>معلومات عن الفريق...</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 SportHub - جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportHub | تواصل معنا</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="news.html">الأخبار</a></li>
+                <li><a href="teams.html">الفرق</a></li>
+                <li><a href="live-scores.html">النتائج المباشرة</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>تواصل معنا</h1>
+        <form action="submit_contact.php" method="POST">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">الرسالة:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">إرسال</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 SportHub - جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html>// Adding hover effect on teams
+const teamArticles = document.querySelectorAll('.teams article');
+
+teamArticles.forEach(article => {
+    article.addEventListener('mouseover', () => {
+        article.style.backgroundColor = '#f0f8ff';
+    });
+    article.addEventListener('mouseout', () => {
+        article.style.backgroundColor = 'white';
+    });
+});<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
+
+    // إرسال الرسالة بالبريد الإلكتروني
+    $to = "admin@sporthub.com";
+    $subject = "رسالة جديدة من: $name";
+    $body = "الاسم: $name\nالبريد الإلكتروني: $email\n\nالرسالة:\n$message";
+
+    if (mail($to, $subject, $body)) {
+        echo "تم إرسال رسالتك بنجاح!";
+    } else {
+        echo "حدث خطأ أثناء إرسال الرسالة. حاول مرة أخرى.";
+    }
+}
+?>
